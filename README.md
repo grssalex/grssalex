@@ -2,7 +2,7 @@
 
 <div style="flex: 1; padding-right: 20px;">
   
-# Salut, moi c'est Alex 👋
+# Bienvenue sur le profil Github de grssalex 👋
 
 Je suis développeur web passionné et étudiant à Epitech ! 🚀  
 📍 Basé à Paris et Montpellier.  
