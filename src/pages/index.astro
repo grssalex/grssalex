@@ -1,0 +1,1093 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ContactSection from '../components/ContactSection.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Alexandre Grosse - Développeur Full Stack">
+	<main>
+		<HeroSection />
+		
+		<section id="about" class="about-section">
+			<div class="container">
+				<h2 class="section-title">À <span class="text-gradient">Propos</span></h2>
+				
+				<div class="about-content">
+					<div class="about-text">
+						<p>Je suis un développeur Full Stack passionné par la création d'applications web performantes et intuitives. Avec une solide expérience dans les technologies modernes du web, je m'efforce de livrer des solutions sur mesure qui répondent aux besoins spécifiques de mes clients.</p>
+						
+						<p>Mon approche du développement est centrée sur l'utilisateur, avec une attention particulière portée à l'accessibilité, la performance et l'expérience utilisateur. Je suis constamment à l'affût des dernières tendances et évolutions technologiques pour offrir les meilleures solutions possibles.</p>
+						
+						<div class="about-stats">
+							<div class="stat">
+								<span class="stat-number">5+</span>
+								<span class="stat-label">Années d'expérience</span>
+							</div>
+							<div class="stat">
+								<span class="stat-number">15+</span>
+								<span class="stat-label">Projets terminés</span>
+							</div>
+							<div class="stat">
+								<span class="stat-number">20+</span>
+								<span class="stat-label">Clients satisfaits</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="about-image">
+						<div class="experience-card">
+							<h3>Mon parcours</h3>
+							<div class="timeline">
+								<div class="timeline-item">
+									<div class="timeline-dot"></div>
+									<div class="timeline-content">
+										<h4>Développeur Web en charge du renouvellement e-commerce de la société Epoxia</h4>
+										<p class="timeline-date">Septembre 2025 </p>
+										<p>Chargé de mettre à jour le site e-commerce de la société Epoxia en utilisant des technologies modernes et renouveler les logiciels internes de l'entreprise</p>
+									</div>
+								</div>
+								
+								<div class="timeline-item">
+									<div class="timeline-dot"></div>
+									<div class="timeline-content">
+										<h4>Création de l'agence AGWS</h4>
+										<p class="timeline-date">Fevrier 2023 - Aujourd'hui</p>
+										<p>Création d'une agence de développement web et mobile pour des entreprises de divers secteurs d'activité.</p>
+									</div>
+								</div>
+								
+								<div class="timeline-item">
+									<div class="timeline-dot"></div>
+									<div class="timeline-content">
+										<h4>Développeur Web Junior</h4>
+										<p class="timeline-date">2018 - 2020</p>
+										<p>Premiers pas dans le développement web, travail sur divers projets web et mobile.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="projects" class="projects-section">
+			<div class="container">
+				<h2 class="section-title">Le Programme <span class="text-gradient">Sat0ry</span></h2>
+				
+				<div class="satory-container">
+					<div class="satory-content">
+						<p class="satory-description">
+							Sat0ry est l'ensemble des projets que j'ai déjà réalisés et en cours de réalisation qui portent sur différentes thématiques comme l'IA, la gestion client avec un CRM créé entièrement ou encore un logiciel d'OSINT et de recherche avancée de données.
+						</p>
+						
+						<div class="projects-grid">
+							<div class="project-card">
+								<div class="project-image-container">
+									<div class="project-image ai-gradient"></div>
+									<div class="project-overlay">
+										<div class="project-links">
+											<a href="https://github.com/grssalex/satory-ai" target="_blank" rel="noopener noreferrer" class="project-link">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+												GitHub
+											</a>
+											<a href="https://satory-ai.grssalex.dev" target="_blank" rel="noopener noreferrer" class="project-link">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><path d="M10 14L3 21"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+												Démo
+											</a>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-info">
+									<div class="project-badge ai-badge">En cours de développement</div>
+									<h3 class="project-title">Sat0ry AI</h3>
+									<p class="project-description"> L'intelligence artificielle qui grâce aux différents modèles d'IA existant combine les résultats pour donner une réponse la plus précise possible.</p>
+									
+									<div class="project-technologies">
+										<span class="project-tech">Astro Framework</span>
+										<span class="project-tech">JavaScript</span>
+										<span class="project-tech">TypeScript</span>
+										<span class="project-tech">API OpenAI | Anthropic | Mistral | Gemini</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="project-card">
+								<div class="project-image-container">
+									<div class="project-image crm-gradient"></div>
+									<div class="project-overlay">
+										<div class="project-links">
+											<a href="https://github.com/grssalex/satory-crm" target="_blank" rel="noopener noreferrer" class="project-link">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+												GitHub
+											</a>
+											<a href="https://satory-crm.grssalex.dev" target="_blank" rel="noopener noreferrer" class="project-link">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><path d="M10 14L3 21"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+												Démo
+											</a>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-info">
+									<div class="project-badge crm-badge">En cours de développement</div>
+									<h3 class="project-title">Sat0ry CRM</h3>
+									<p class="project-description">Système de gestion de relation client entièrement personnalisable, incluant la gestion des contacts, l'automatisation marketing et le suivi des opportunités commerciales. Couplé avec Sat0ry Facturation</p>
+									
+									<div class="project-technologies">
+										<span class="project-tech">Astro Framework</span>
+										<span class="project-tech">Node.js</span>
+										<span class="project-tech">Firebase</span>									</div>
+								</div>
+							</div>
+							
+							<div class="project-card">
+								<div class="project-image-container">
+									<div class="project-image osint-gradient"></div>
+									<div class="project-overlay">
+										<div class="project-links">
+											<a href="https://github.com/grssalex/satory-osint" target="_blank" rel="noopener noreferrer" class="project-link">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+												GitHub
+											</a>
+											<a href="https://satory-osint.grssalex.dev" target="_blank" rel="noopener noreferrer" class="project-link">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><path d="M10 14L3 21"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+												Démo
+											</a>
+										</div>
+									</div>
+								</div>
+								
+								<div class="project-info">
+									<div class="project-badge osint-badge">En cours de développement</div>
+									<h3 class="project-title">Sat0ry Facturation</h3>
+									<p class="project-description">Outil de facturation pour les entreprises de divers secteurs d'activité.</p>
+									
+									<div class="project-technologies">
+										<span class="project-tech">Astro Framework</span>
+										<span class="project-tech">Firebase</span>
+										<span class="project-tech">Node.js</span>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="agency" class="agency-section">
+			<div class="container">
+				<h2 class="section-title">L'Agence <span class="text-gradient">AGWS</span></h2>
+				
+				<div class="agency-container">
+					<div class="agency-description">
+						<p>
+							<strong>Alexandre Grosse Web Services</strong> est une agence spécialisée dans la création de sites web et d'applications mobiles pour des entreprises de divers secteurs d'activité. Notre engagement : des réalisations de qualité livrées en moins d'une semaine.
+						</p>
+					</div>
+					
+					<div class="agency-highlights">
+						<div class="highlight-card">
+							<div class="highlight-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+							</div>
+							<div class="highlight-content">
+								<h3>Délai Express</h3>
+								<p>Livraison de votre projet en moins d'une semaine</p>
+							</div>
+						</div>
+						
+						<div class="highlight-card">
+							<div class="highlight-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+							</div>
+							<div class="highlight-content">
+								<h3>Prix Transparent</h3>
+								<p>Tarifs clairs et adaptés à vos besoins. À partir de 450€ pour le site vitrine et 1500€ pour le site e-commerce.</p>
+							</div>
+						</div>
+						
+						<div class="highlight-card">
+							<div class="highlight-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+							</div>
+							<div class="highlight-content">
+								<h3>Service Personnalisé</h3>
+								<p>Solutions adaptées à votre secteur d'activité</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="agency-pricing">
+						<h3>Nos services</h3>
+						<p class="agency-pricing-intro">Nous proposons des solutions d'hébergement et de maintenance adaptées à vos besoins :</p>
+						
+						<div class="agency-services">
+							<div class="agency-service">
+								<h4>Hébergement standard</h4>
+								<p class="service-price">25€<span>/mois</span></p>
+								<p class="service-description">Hébergement sécurisé avec certificat SSL, sauvegardes régulières et support technique de base.</p>
+							</div>
+							
+							<div class="agency-service">
+								<h4>Maintenance régulière</h4>
+								<p class="service-price">35€<span>/mois</span></p>
+								<p class="service-description">Mises à jour mensuelles, support prioritaire et optimisation SEO basique.</p>
+							</div>
+							
+							<div class="agency-service">
+								<h4>Services avancés</h4>
+								<p class="service-price">100€<span>/mois</span></p>
+								<p class="service-description">Modifications illimitées, support dédié, SEO avancé et développements sur mesure.</p>
+							</div>
+						</div>
+						
+						<p class="agency-pricing-note">Tous nos services sont sans engagement et peuvent être adaptés selon vos besoins spécifiques. <a href="https://agws.fr" target="_blank">Rendez-vous sur le site d'AGWS pour plus d'informations: agws.fr</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<ContactSection />
+	</main>
+</Layout>
+
+<style>
+	.about-section {
+		padding: 8rem 2rem;
+		position: relative;
+	}
+	
+	.container {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	
+	.section-title {
+		font-size: 3rem;
+		margin-bottom: 4rem;
+		text-align: center;
+	}
+	
+	.text-gradient {
+		background-image: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		color: transparent;
+	}
+	
+	.about-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+	
+	.about-text p {
+		margin-bottom: 1.5rem;
+		font-size: 1.1rem;
+		line-height: 1.8;
+		color: var(--text-color);
+	}
+	
+	.about-stats {
+		display: flex;
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+	
+	.stat {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.stat-number {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		color: var(--primary-color);
+		font-family: var(--font-heading);
+	}
+	
+	.stat-label {
+		font-size: 0.9rem;
+		color: var(--text-light);
+		margin-top: 0.5rem;
+	}
+	
+	.experience-card {
+		background-color: var(--card-bg);
+		border-radius: 1rem;
+		box-shadow: var(--shadow-md);
+		border: 1px solid var(--border-color);
+		padding: 2rem;
+	}
+	
+	.experience-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+		color: var(--primary-color);
+	}
+	
+	.timeline {
+		position: relative;
+		padding-left: 2rem;
+	}
+	
+	.timeline::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 7px;
+		height: 100%;
+		width: 2px;
+		background-color: var(--border-color);
+	}
+	
+	.timeline-item {
+		margin-bottom: 2rem;
+		position: relative;
+	}
+	
+	.timeline-item:last-child {
+		margin-bottom: 0;
+	}
+	
+	.timeline-dot {
+		position: absolute;
+		left: -2rem;
+		top: 0;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background-color: var(--primary-color);
+		border: 3px solid var(--card-bg);
+		z-index: 1;
+	}
+	
+	.timeline-content h4 {
+		font-size: 1.2rem;
+		margin-bottom: 0.5rem;
+		color: var(--text-color);
+	}
+	
+	.timeline-date {
+		font-size: 0.9rem;
+		color: var(--text-light);
+		margin-bottom: 0.75rem;
+	}
+	
+	.timeline-content p:last-child {
+		margin-bottom: 0;
+	}
+	
+	/* Satory Section Styles */
+	.projects-section {
+		padding: 8rem 2rem;
+		background-color: var(--card-bg);
+		position: relative;
+	}
+	
+	.satory-container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	
+	.satory-description {
+		font-size: 1.25rem;
+		line-height: 1.8;
+		color: var(--text-color);
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+	
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2.5rem;
+	}
+	
+	.project-card {
+		background-color: var(--background-color);
+		border-radius: 1rem;
+		overflow: hidden;
+		box-shadow: var(--shadow-md);
+		border: 1px solid var(--border-color);
+		transition: transform var(--transition), box-shadow var(--transition);
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.project-card:hover {
+		transform: translateY(-10px);
+		box-shadow: var(--shadow-lg);
+	}
+	
+	.project-image-container {
+		position: relative;
+		height: 200px;
+		overflow: hidden;
+	}
+	
+	.project-image {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		transition: transform 0.5s ease;
+	}
+	
+	.project-card:hover .project-image {
+		transform: scale(1.05);
+	}
+	
+	.ai-gradient {
+		background: linear-gradient(135deg, #5D3FD3, #7B5CF0);
+	}
+	
+	.crm-gradient {
+		background: linear-gradient(135deg, #9D4EDD, #C77DFF);
+	}
+	
+	.osint-gradient {
+		background: linear-gradient(135deg, #FF3366, #FF5277);
+	}
+	
+	.project-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.7);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		transition: opacity var(--transition);
+	}
+	
+	.project-card:hover .project-overlay {
+		opacity: 1;
+	}
+	
+	.project-links {
+		display: flex;
+		gap: 1rem;
+	}
+	
+	.project-link {
+		background-color: var(--primary-color);
+		color: white;
+		text-decoration: none;
+		padding: 0.5rem 1rem;
+		border-radius: 0.5rem;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-weight: 500;
+		transition: transform var(--transition), background-color var(--transition);
+	}
+	
+	.project-link:hover {
+		background-color: var(--secondary-color);
+		transform: translateY(-2px);
+	}
+	
+	.project-info {
+		padding: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+	
+	.project-badge {
+		display: inline-block;
+		padding: 0.35rem 0.75rem;
+		border-radius: 1rem;
+		font-size: 0.75rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		width: fit-content;
+	}
+	
+	.ai-badge {
+		background-color: rgba(93, 63, 211, 0.1);
+		color: var(--primary-color);
+	}
+	
+	.crm-badge {
+		background-color: rgba(157, 78, 221, 0.1);
+		color: var(--secondary-color);
+	}
+	
+	.osint-badge {
+		background-color: rgba(255, 51, 102, 0.1);
+		color: var(--accent-color);
+	}
+	
+	.project-title {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: var(--text-color);
+	}
+	
+	.project-description {
+		color: var(--text-light);
+		margin-bottom: 1.5rem;
+		flex-grow: 1;
+	}
+	
+	.project-technologies {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin-top: auto;
+	}
+	
+	.project-tech {
+		background-color: var(--card-bg);
+		border: 1px solid var(--border-color);
+		padding: 0.25rem 0.75rem;
+		border-radius: 1rem;
+		font-size: 0.85rem;
+		color: var(--text-light);
+	}
+	
+	@media (max-width: 1200px) {
+		.container {
+			padding: 0 2rem;
+		}
+		
+		.about-content {
+			gap: 3rem;
+		}
+		
+		.agency-services {
+			gap: 2rem;
+		}
+	}
+	
+	@media (max-width: 992px) {
+		.section-title {
+			font-size: 2.75rem;
+		}
+		
+		.about-stats {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1.5rem;
+		}
+		
+		.stat {
+			width: 100%;
+		}
+		
+		.agency-service {
+			max-width: 280px;
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.about-section, .projects-section, .agency-section {
+			padding: 5rem 1.5rem;
+		}
+		
+		.section-title {
+			font-size: 2.5rem;
+			margin-bottom: 2.5rem;
+		}
+		
+		.about-content {
+			grid-template-columns: 1fr;
+			gap: 2.5rem;
+		}
+		
+		.about-text p {
+			font-size: 1rem;
+		}
+		
+		.about-stats {
+			margin-top: 2rem;
+		}
+		
+		.stat {
+			flex-direction: row;
+			align-items: center;
+			gap: 1rem;
+		}
+		
+		.stat-number {
+			font-size: 2.25rem;
+		}
+		
+		.stat-label {
+			font-size: 0.85rem;
+		}
+		
+		.experience-card {
+			padding: 1.5rem;
+		}
+		
+		.timeline-content h4 {
+			font-size: 1.1rem;
+		}
+		
+		.timeline-content p {
+			font-size: 0.9rem;
+		}
+		
+		.satory-description {
+			font-size: 1.1rem;
+			margin-bottom: 3rem;
+		}
+		
+		.projects-grid {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+		
+		.project-card {
+			max-width: 100%;
+		}
+		
+		.agency-description p {
+			font-size: 1.1rem;
+		}
+		
+		.agency-highlights {
+			gap: 1.5rem;
+		}
+		
+		.highlight-card {
+			width: 100%;
+			padding: 1.25rem;
+		}
+		
+		.highlight-icon {
+			width: 40px;
+			height: 40px;
+		}
+		
+		.highlight-content h3 {
+			font-size: 1.1rem;
+		}
+		
+		.highlight-content p {
+			font-size: 0.9rem;
+		}
+		
+		.agency-services {
+			gap: 2rem;
+		}
+		
+		.agency-service {
+			width: 100%;
+			max-width: none;
+		}
+		
+		.agency-service h4 {
+			font-size: 1.3rem;
+		}
+		
+		.service-price {
+			font-size: 1.75rem;
+		}
+		
+		.agency-pricing-note {
+			font-size: 0.9rem;
+		}
+	}
+	
+	@media (max-width: 576px) {
+		.about-section, .projects-section, .agency-section {
+			padding: 4rem 1rem;
+		}
+		
+		.section-title {
+			font-size: 2.25rem;
+			margin-bottom: 2rem;
+		}
+		
+		.about-text p {
+			font-size: 0.95rem;
+		}
+		
+		.stat-number {
+			font-size: 2rem;
+		}
+		
+		.experience-card {
+			padding: 1.25rem;
+		}
+		
+		.timeline-content h4 {
+			font-size: 1rem;
+		}
+		
+		.satory-description {
+			font-size: 1rem;
+		}
+		
+		.project-image-container {
+			height: 180px;
+		}
+		
+		.project-info {
+			padding: 1.25rem;
+		}
+		
+		.project-title {
+			font-size: 1.3rem;
+		}
+		
+		.project-description {
+			font-size: 0.9rem;
+		}
+		
+		.agency-description p {
+			font-size: 1rem;
+		}
+		
+		.highlight-card {
+			padding: 1rem;
+		}
+		
+		.agency-service h4 {
+			font-size: 1.2rem;
+		}
+		
+		.service-price {
+			font-size: 1.5rem;
+		}
+		
+		.service-description {
+			font-size: 0.9rem;
+		}
+	}
+	
+	/* Agency Section Styles */
+	.agency-section {
+		padding: 8rem 2rem;
+		position: relative;
+		background-color: var(--background-color);
+	}
+	
+	.agency-container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	
+	.agency-description {
+		max-width: 800px;
+		margin: 0 auto 4rem;
+		text-align: center;
+	}
+	
+	.agency-description p {
+		font-size: 1.25rem;
+		line-height: 1.8;
+		color: var(--text-color);
+	}
+	
+	.agency-highlights {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		justify-content: center;
+		margin-bottom: 5rem;
+	}
+	
+	.highlight-card {
+		background-color: var(--card-bg);
+		border-radius: 1rem;
+		padding: 1.5rem;
+		box-shadow: var(--shadow-md);
+		border: 1px solid var(--border-color);
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+		width: 300px;
+		transition: transform var(--transition), box-shadow var(--transition);
+	}
+	
+	.highlight-card:hover {
+		transform: translateY(-5px);
+		box-shadow: var(--shadow-lg);
+	}
+	
+	.highlight-icon {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background-color: rgba(93, 63, 211, 0.1);
+		color: var(--primary-color);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+	
+	.highlight-content h3 {
+		font-size: 1.2rem;
+		margin-bottom: 0.5rem;
+		color: var(--text-color);
+	}
+	
+	.highlight-content p {
+		color: var(--text-light);
+		font-size: 0.95rem;
+		line-height: 1.5;
+	}
+	
+	.agency-pricing {
+		margin-top: 4rem;
+		text-align: center;
+	}
+	
+	.agency-pricing h3 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		color: var(--text-color);
+	}
+	
+	.agency-pricing-intro {
+		max-width: 700px;
+		margin: 0 auto 3rem;
+		font-size: 1.1rem;
+		color: var(--text-light);
+	}
+	
+	.agency-services {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 3rem;
+		margin-bottom: 3rem;
+	}
+	
+	.agency-service {
+		background-color: var(--card-bg);
+		border-radius: 1rem;
+		padding: 2rem;
+		box-shadow: var(--shadow-md);
+		border: 1px solid var(--border-color);
+		max-width: 320px;
+		text-align: left;
+		transition: transform var(--transition), box-shadow var(--transition);
+	}
+	
+	.agency-service:hover {
+		transform: translateY(-5px);
+		box-shadow: var(--shadow-lg);
+	}
+	
+	.agency-service h4 {
+		font-size: 1.4rem;
+		margin-bottom: 0.5rem;
+		color: var(--text-color);
+		position: relative;
+		padding-bottom: 0.75rem;
+	}
+	
+	.agency-service h4::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50px;
+		height: 3px;
+		background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+	}
+	
+	.service-price {
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--primary-color);
+		margin: 1rem 0;
+		font-family: var(--font-heading);
+	}
+	
+	.service-price span {
+		font-size: 1rem;
+		color: var(--text-light);
+		font-weight: 400;
+	}
+	
+	.service-description {
+		font-size: 1rem;
+		line-height: 1.7;
+		color: var(--text-light);
+	}
+	
+	.agency-pricing-note {
+		font-size: 0.95rem;
+		color: var(--text-light);
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	
+	.agency-pricing-note a {
+		color: var(--primary-color);
+		text-decoration: none;
+		font-weight: 600;
+		transition: color var(--transition);
+	}
+	
+	.agency-pricing-note a:hover {
+		color: var(--secondary-color);
+	}
+</style>
+
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    // Enable smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const href = anchor.getAttribute('href');
+        if (href) {
+          const targetElement = document.querySelector(href);
+          
+          if (targetElement) {
+            const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+
+    // Animations for about section
+    gsap.registerPlugin(ScrollTrigger);
+    
+    gsap.from('.about-section .section-title', {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: '.about-section',
+        start: 'top 80%',
+      }
+    });
+    
+    gsap.from('.about-text', {
+      x: -50,
+      opacity: 0,
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: '.about-content',
+        start: 'top 80%',
+      }
+    });
+    
+    gsap.from('.about-image', {
+      x: 50,
+      opacity: 0,
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: '.about-content',
+        start: 'top 80%',
+      }
+    });
+    
+    gsap.from('.stat', {
+      y: 30,
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.15,
+      scrollTrigger: {
+        trigger: '.about-stats',
+        start: 'top 90%',
+      }
+    });
+    
+    gsap.from('.timeline-item', {
+      y: 30,
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: '.timeline',
+        start: 'top 90%',
+      }
+    });
+    
+    // Animations for Satory section
+    gsap.from('.projects-section .section-title', {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: '.projects-section',
+        start: 'top 80%',
+      }
+    });
+    
+    gsap.from('.satory-description', {
+      y: 30,
+      opacity: 0,
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: '.satory-description',
+        start: 'top 80%',
+      }
+    });
+    
+    gsap.from('.project-card', {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: '.projects-grid',
+        start: 'top 80%',
+      }
+    });
+
+    // Animations for Agency section
+    gsap.from('.agency-section .section-title', {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: '.agency-section',
+        start: 'top 80%',
+      }
+    });
+    
+    gsap.from('.agency-description', {
+      y: 30,
+      opacity: 0,
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: '.agency-description',
+        start: 'top 80%',
+      }
+    });
+    
+    gsap.from('.highlight-card', {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: '.agency-highlights',
+        start: 'top 80%',
+      }
+    });
+  });
+</script>

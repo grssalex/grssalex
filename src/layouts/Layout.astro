@@ -1,0 +1,336 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Portfolio d'Alexandre Grasset - Développeur Web Full Stack" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<title>{title}</title>
+	</head>
+	<body>
+		<div class="noise"></div>
+		<div class="cursor"></div>
+		<header>
+			<div class="header-container">
+				<div class="logo">AG</div>
+				<nav>
+					<a href="/" class="nav-link">Accueil</a>
+					<a href="/#about" class="nav-link">À propos</a>
+					<a href="/#projects" class="nav-link">Projets</a>
+					<a href="/#contact" class="nav-link">Contact</a>
+					<button class="theme-toggle" aria-label="Toggle dark mode">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+					</button>
+				</nav>
+			</div>
+		</header>
+		<slot />
+
+
+		<script>
+			// Dark mode toggle
+			const themeToggle = document.querySelector('.theme-toggle');
+			const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+			
+			// Check for saved theme preference or use the system preference
+			const currentTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
+			document.documentElement.setAttribute('data-theme', currentTheme);
+
+			themeToggle?.addEventListener('click', () => {
+				const newTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+				document.documentElement.setAttribute('data-theme', newTheme);
+				localStorage.setItem('theme', newTheme);
+			});
+
+			// Custom cursor
+			const cursor = document.querySelector('.cursor');
+			
+			if (cursor) {
+				document.addEventListener('mousemove', (e) => {
+					cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px;`);
+				});
+				
+				document.addEventListener('click', () => {
+					cursor.classList.add('cursor-click');
+					setTimeout(() => {
+						cursor.classList.remove('cursor-click');
+					}, 500);
+				});
+				
+				// Add hover class to all links for cursor effect
+				const links = document.querySelectorAll('a, button');
+				links.forEach(link => {
+					link.addEventListener('mouseenter', () => {
+						cursor.classList.add('cursor-hover');
+					});
+					link.addEventListener('mouseleave', () => {
+						cursor.classList.remove('cursor-hover');
+					});
+				});
+			}
+		</script>
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--primary-color: #5D3FD3;
+		--secondary-color: #9D4EDD;
+		--accent-color: #FF3366;
+		--text-color: #2D2D2D;
+		--text-light: #6B7280;
+		--background-color: #FCFCFC;
+		--card-bg: #FFFFFF;
+		--border-color: #E2E8F0;
+		--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+		--shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+		--shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08);
+		--font-heading: 'Space Grotesk', sans-serif;
+		--font-body: 'Inter', sans-serif;
+		--transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+
+	[data-theme="dark"] {
+		--primary-color: #7B5CF0;
+		--secondary-color: #C77DFF;
+		--accent-color: #FF5277;
+		--text-color: #F3F4F6;
+		--text-light: #9CA3AF;
+		--background-color: #111827;
+		--card-bg: #1F2937;
+		--border-color: #374151;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: var(--font-body);
+		color: var(--text-color);
+		background-color: var(--background-color);
+		line-height: 1.6;
+		overflow-x: hidden;
+		transition: background-color var(--transition), color var(--transition);
+		cursor: none;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: var(--font-heading);
+		font-weight: 700;
+		line-height: 1.2;
+	}
+
+	.noise {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -10;
+		opacity: 0.03;
+		pointer-events: none;
+		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+	}
+
+	.cursor {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		background: var(--primary-color);
+		border-radius: 50%;
+		transform: translate(-50%, -50%);
+		pointer-events: none;
+		mix-blend-mode: difference;
+		z-index: 9999;
+		transition: width 0.2s, height 0.2s, background-color 0.2s;
+	}
+
+	.cursor-hover {
+		width: 40px;
+		height: 40px;
+		background: var(--accent-color);
+	}
+
+	.cursor-click {
+		transform: translate(-50%, -50%) scale(0.8);
+		background: var(--accent-color);
+		transition: transform 0.15s;
+	}
+
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 1.5rem 0;
+		z-index: 100;
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		background-color: rgba(var(--background-color), 0.8);
+		transition: padding 0.3s, background-color 0.3s;
+	}
+
+	.header-container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo {
+		font-family: var(--font-heading);
+		font-size: 1.8rem;
+		font-weight: 800;
+		color: var(--primary-color);
+	}
+
+	nav {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	.nav-link {
+		color: var(--text-color);
+		text-decoration: none;
+		font-weight: 500;
+		position: relative;
+		padding: 0.5rem 0;
+		transition: color var(--transition);
+	}
+
+	.nav-link::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background-color: var(--accent-color);
+		transition: width var(--transition);
+	}
+
+	.nav-link:hover {
+		color: var(--accent-color);
+	}
+
+	.nav-link:hover::after {
+		width: 100%;
+	}
+
+	.theme-toggle {
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 0.5rem;
+		color: var(--text-color);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.theme-toggle .moon {
+		display: none;
+	}
+
+	[data-theme="dark"] .theme-toggle .sun {
+		display: none;
+	}
+
+	[data-theme="dark"] .theme-toggle .moon {
+		display: block;
+	}
+
+	footer {
+		margin-top: 8rem;
+		padding: 4rem 0;
+		background-color: var(--card-bg);
+		border-top: 1px solid var(--border-color);
+	}
+
+	.footer-container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.footer-content {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+
+	.footer-logo {
+		font-family: var(--font-heading);
+		font-size: 2rem;
+		font-weight: 800;
+		color: var(--primary-color);
+	}
+
+	.footer-links {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.footer-links a {
+		color: var(--text-color);
+		text-decoration: none;
+		transition: color var(--transition);
+	}
+
+	.footer-links a:hover {
+		color: var(--accent-color);
+	}
+
+	.copyright {
+		color: var(--text-light);
+		text-align: center;
+		font-size: 0.9rem;
+	}
+
+	/* Responsive design */
+	@media (max-width: 768px) {
+		.cursor {
+			display: none;
+		}
+
+		body {
+			cursor: auto;
+		}
+
+		.header-container {
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		nav {
+			gap: 1rem;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.footer-content {
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+		}
+	}
+</style>
