@@ -6,15 +6,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "deploy": "gh-pages --dist dist --branch portfolio"
+    "astro": "astro"
   },
   "dependencies": {
     "astro": "^5.7.9",
     "atropos": "^2.0.2",
     "gsap": "^3.12.5"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
