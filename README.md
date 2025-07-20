@@ -6,10 +6,6 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Alexandre_Grosse-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/grssalex)
 [![GitHub](https://img.shields.io/badge/GitHub-grssalex-181717?style=for-the-badge&logo=github)](https://github.com/grssalex)
 
-## 🐍 Mes Contributions GitHub
-
-![snake gif](https://github.com/grssalex/snk/blob/output/github-contribution-grid-snake-ocean.gif)
-
 ---
 
 ## 🚀 À propos de moi
