@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 
 const projects = [
   {
@@ -50,7 +49,7 @@ const projects = [
                 src={project.image} 
                 alt={project.title} 
                 class="project-image" 
-                onError={(e) => e.target.src = '/placeholder-project.jpg'}
+                onerror="this.src='/placeholder-project.jpg'"
               />
               <div class="project-overlay">
                 <div class="project-links">
@@ -83,10 +82,10 @@ const projects = [
   </div>
 </section>
 
-<script>
-  import { gsap } from 'gsap';
-  import { ScrollTrigger } from 'gsap/ScrollTrigger';
-  import Atropos from 'atropos';
+<script is:inline>
+  import 'gsap';
+  import 'gsap/ScrollTrigger';
+  import 'atropos';
   
   document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);

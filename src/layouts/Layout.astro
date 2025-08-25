@@ -24,8 +24,7 @@ const { title } = Astro.props;
 		<div class="cursor"></div>
 		<header>
 			<div class="header-container">
-				<div class="logo">AG</div>
-				<nav>
+				<nav class="apple-nav">
 					<a href="/" class="nav-link">Accueil</a>
 					<a href="/#about" class="nav-link">À propos</a>
 					<a href="/#projects" class="nav-link">Projets</a>
@@ -45,8 +44,8 @@ const { title } = Astro.props;
 			const themeToggle = document.querySelector('.theme-toggle');
 			const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 			
-			// Check for saved theme preference or use the system preference
-			const currentTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
+			// Check for saved theme preference or use dark mode as default
+			const currentTheme = localStorage.getItem('theme') || 'dark';
 			document.documentElement.setAttribute('data-theme', currentTheme);
 
 			themeToggle?.addEventListener('click', () => {
@@ -110,9 +109,9 @@ const { title } = Astro.props;
 		--accent-color: #FF5277;
 		--text-color: #F3F4F6;
 		--text-light: #9CA3AF;
-		--background-color: #111827;
-		--background-color-rgb: 17, 24, 39;
-		--card-bg: #1F2937;
+		--background-color: #000000;
+		--background-color-rgb: 0, 0, 0;
+		--card-bg: #16213e;
 		--border-color: #374151;
 	}
 
@@ -199,7 +198,7 @@ const { title } = Astro.props;
 		margin: 0 auto;
 		padding: 0 2rem;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 	}
 
@@ -214,6 +213,16 @@ const { title } = Astro.props;
 		display: flex;
 		gap: 2rem;
 		align-items: center;
+	}
+	
+	.apple-nav {
+		background-color: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 25px;
+		padding: 0.35rem 1rem;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 	}
 
 	.nav-link {
@@ -333,20 +342,24 @@ const { title } = Astro.props;
 		}
 
 		header {
-			padding: 0.75rem 0;
+			padding: 1rem 0;
 			background-color: rgba(var(--background-color-rgb), 0.95);
 		}
 
 		.header-container {
 			flex-direction: column;
-			gap: 0.5rem;
-			padding: 0 1rem;
+			gap: 1rem;
+			padding: 0 1.5rem;
 		}
 
 		nav {
-			gap: 0.75rem;
+			gap: 1.5rem;
 			flex-wrap: wrap;
 			justify-content: center;
+		}
+		
+		.apple-nav {
+			padding: 0.5rem 1.5rem;
 		}
 
 		.footer-content {
@@ -358,11 +371,11 @@ const { title } = Astro.props;
 
 	@media (max-width: 576px) {
 		header {
-			padding: 0.5rem 0;
+			padding: 1rem 0;
 		}
 
 		.header-container {
-			padding: 0 0.75rem;
+			padding: 0 1rem;
 		}
 
 		.logo {
@@ -370,12 +383,16 @@ const { title } = Astro.props;
 		}
 
 		nav {
-			gap: 0.5rem;
+			gap: 1rem;
+		}
+		
+		.apple-nav {
+			padding: 0.4rem 1.2rem;
 		}
 
 		.nav-link {
-			font-size: 0.9rem;
-			padding: 0.3rem 0;
+			font-size: 1rem;
+			padding: 0.4rem 0;
 		}
 	}
 </style>

@@ -5,7 +5,7 @@
         <span class="text-gradient">Alexandre Grosse</span>
       </h1>
       <h2 id="hero-subtitle">Développeur Full Stack</h2>
-      <p id="hero-description">Je crée des expériences web modernes, <br class="hidden-mobile" />performantes et accessibles.</p>
+      <p id="hero-description">Je créer site internet, applications web et mobile, logiciels ainsi que l'installation de serveur linux.</p>
       
       <div class="hero-cta">
         <a href="#projects" class="primary-button">Voir mes projets</a>
@@ -26,22 +26,16 @@
         <div class="code-content">
           <pre><code><span class="token keyword">class</span> <span class="token class-name">Developer</span> <span class="token punctuation">{</span>
   <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Alexandre Grosse'</span><span class="token punctuation">;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>role <span class="token operator">=</span> <span class="token string">'Full Stack Developer'</span><span class="token punctuation">;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>location <span class="token operator">=</span> <span class="token string">'France'</span><span class="token punctuation">;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>languages & frameworks <span class="token operator">=</span> <span class="token punctuation">[</span>
-      <span class="token string">'JavaScript'</span><span class="token punctuation">,</span> 
-      <span class="token string">'Python'</span><span class="token punctuation">,</span>
-      <span class="token string">'Astro Framework'</span><span class="token punctuation">,</span>
-      <span class="token string">'Node.js'</span><span class="token punctuation">,</span>
-    <span class="token punctuation">]</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property">name</span> <span class="token operator">=</span> <span class="token string">'Alexandre Grosse'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property">role</span> <span class="token operator">=</span> <span class="token string">'Full Stack Developer'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property">location</span> <span class="token operator">=</span> <span class="token string">'Ile de france, Yvelines, France'</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property">languages</span> <span class="token operator">=</span> <span class="token string">'React, HTML, CSS, JavaScript, Python, C, '</span><span class="token punctuation">;</span>
 
   <span class="token function">sayHello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token console">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Bienvenue sur mon portfolio!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token console">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Bienvenue sur mon portfolio'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token console">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Où sont présenter mes projets'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-
 <span class="token keyword">const</span> me <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Developer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 me<span class="token punctuation">.</span><span class="token function">sayHello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
         </div>
@@ -263,6 +257,38 @@ me<span class="token punctuation">.</span><span class="token function">sayHello<
   
   .token.console {
     color: #F9E2AF;
+  }
+  
+  /* Property names after this. */
+  .token.property {
+    color: #89DCEB;
+  }
+  
+  /* Light mode adjustments for better visibility */
+  @media (prefers-color-scheme: light) {
+    .token.keyword {
+      color: #D73A49;
+    }
+    
+    .token.string {
+      color: #032F62;
+    }
+    
+    .token.punctuation, .token.operator {
+      color: #24292E;
+    }
+    
+    .token.class-name, .token.function {
+      color: #6F42C1;
+    }
+    
+    .token.console {
+      color: #E36209;
+    }
+    
+    .token.property {
+      color: #005CC5;
+    }
   }
   
   /* Responsive styles */
