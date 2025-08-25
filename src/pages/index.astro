@@ -79,9 +79,79 @@ import HeroSection from '../components/HeroSection.astro';
 			</div>
 		</section>
 		
+		<section id="skills" class="skills-section">
+			<div class="container">
+				<h2 class="section-title">Mes <span class="text-gradient">Compétences</span></h2>
+				
+				<div class="skills-container">
+					<div class="skills-grid">
+						<div class="skill-card frontend">
+							<div class="skill-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+							</div>
+							<h3 class="skill-title">Frontend</h3>
+							<div class="skill-technologies">
+								<span class="skill-tech">HTML</span>
+								<span class="skill-tech">CSS</span>
+								<span class="skill-tech">JavaScript</span>
+								<span class="skill-tech">React</span>
+							</div>
+						</div>
+						
+						<div class="skill-card backend">
+							<div class="skill-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+							</div>
+							<h3 class="skill-title">Backend & APIs</h3>
+							<div class="skill-technologies">
+								<span class="skill-tech">Python</span>
+								<span class="skill-tech">C</span>
+								<span class="skill-tech">Node.js</span>
+								<span class="skill-tech">Nginx</span>
+								<span class="skill-tech">OpenAI API</span>
+								<span class="skill-tech">Anthropic API</span>
+								<span class="skill-tech">Chroma DB</span>
+							</div>
+						</div>
+						
+						<div class="skill-card devops">
+							<div class="skill-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+							</div>
+							<h3 class="skill-title">DevOps & Système</h3>
+							<div class="skill-technologies">
+								<span class="skill-tech">Git</span>
+								<span class="skill-tech">Docker</span>
+								<span class="skill-tech">Firebase</span>
+								<span class="skill-tech">OVH VPS</span>
+								<span class="skill-tech">Unix</span>
+								<span class="skill-tech">Linux</span>
+								<span class="skill-tech">Ubuntu Server</span>
+								<span class="skill-tech">UTM</span>
+							</div>
+						</div>
+						
+						<div class="skill-card tools">
+							<div class="skill-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+							</div>
+							<h3 class="skill-title">Outils & Plateformes</h3>
+							<div class="skill-technologies">
+								<span class="skill-tech">Cursor</span>
+								<span class="skill-tech">Figma</span>
+								<span class="skill-tech">Office Suite</span>
+								<span class="skill-tech">iWork</span>
+								<span class="skill-tech">Shopify</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
 		<section id="projects" class="projects-section">
 			<div class="container">
-				<h2 class="section-title">Mes <span class="text-gradient">Projets</span></h2>
+				<h2 class="section-title" id="projects-title">Mes <span class="text-gradient" id="projects-gradient">Projets</span></h2>
 				
 				<div class="projects-container">
 					<div class="projects-content">
@@ -89,7 +159,15 @@ import HeroSection from '../components/HeroSection.astro';
 							Découvrez quelques-uns de mes projets récents, réalisés avec les technologies modernes du web.
 						</p>
 						
-						<div class="projects-grid">
+						<div class="projects-toggle">
+							<label class="toggle-switch">
+								<input type="checkbox" id="epitech-toggle">
+								<span class="toggle-slider"></span>
+							</label>
+							<span class="toggle-label">Projets Epitech</span>
+						</div>
+						
+						<div class="projects-grid" id="current-projects">
 							<div class="project-card">
 								<div class="project-image-container">
 									<div class="project-image satory-text">
@@ -211,6 +289,155 @@ import HeroSection from '../components/HeroSection.astro';
 								</div>
 							</div>
 						</div>
+						
+						<div class="projects-grid" id="epitech-projects" style="display: none;">
+							<div class="project-card">
+								<div class="project-image-container">
+									<div class="project-image epitech-ls">
+										<div class="epitech-content">
+											<svg class="epitech-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+											<div class="epitech-title">my_ls</div>
+										</div>
+									</div>
+									<div class="project-overlay">
+										<div class="project-links">
+											<a href="https://github.com/grssalex/Epitech-tek1/tree/my_ls" target="_blank" rel="noopener noreferrer" class="project-link">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+												GitHub
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="project-info">
+									<div class="project-badge epitech-badge">Epitech Project</div>
+									<h3 class="project-title">my_ls</h3>
+									<p class="project-description">Recréation de la commande ls (affichage du contenu d'un répertoire).</p>
+									<div class="project-technologies">
+										<span class="project-tech">C</span>
+										<span class="project-tech">Système Unix</span>
+										<span class="project-tech">Commandes shell</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="project-card">
+								<div class="project-image-container">
+									<div class="project-image epitech-printf">
+										<div class="epitech-content">
+											<svg class="epitech-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg>
+											<div class="epitech-title">my_printf</div>
+										</div>
+									</div>
+									<div class="project-overlay">
+										<div class="project-links">
+											<a href="https://github.com/grssalex/Epitech-tek1/tree/my_printf" target="_blank" rel="noopener noreferrer" class="project-link">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+												GitHub
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="project-info">
+									<div class="project-badge epitech-badge">Epitech Project</div>
+									<h3 class="project-title">my_printf</h3>
+									<p class="project-description">Réimplémentation de la fonction standard printf.</p>
+									<div class="project-technologies">
+										<span class="project-tech">C</span>
+										<span class="project-tech">Formatage de chaînes</span>
+										<span class="project-tech">Fonctions variadiques</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="project-card">
+								<div class="project-image-container">
+									<div class="project-image epitech-radar">
+										<div class="epitech-content">
+											<svg class="epitech-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+											<div class="epitech-title">my_radar</div>
+										</div>
+									</div>
+									<div class="project-overlay">
+										<div class="project-links">
+											<a href="https://github.com/grssalex/Epitech-tek1/tree/my_radar" target="_blank" rel="noopener noreferrer" class="project-link">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+												GitHub
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="project-info">
+									<div class="project-badge epitech-badge">Epitech Project</div>
+									<h3 class="project-title">my_radar</h3>
+									<p class="project-description">Projet graphique utilisant CSFML, simulant un radar avec des avions et tours de contrôle.</p>
+									<div class="project-technologies">
+										<span class="project-tech">C</span>
+										<span class="project-tech">CSFML</span>
+										<span class="project-tech">Graphisme 2D</span>
+										<span class="project-tech">Simulation</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="project-card">
+								<div class="project-image-container">
+									<div class="project-image epitech-sudo">
+										<div class="epitech-content">
+											<svg class="epitech-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><circle cx="12" cy="16" r="1"/><path d="m7 11V7a5 5 0 0 1 10 0v4"/></svg>
+											<div class="epitech-title">my_sudo</div>
+										</div>
+									</div>
+									<div class="project-overlay">
+										<div class="project-links">
+											<a href="https://github.com/grssalex/Epitech-tek1/tree/my_sudo" target="_blank" rel="noopener noreferrer" class="project-link">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+												GitHub
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="project-info">
+									<div class="project-badge epitech-badge">Epitech Project</div>
+									<h3 class="project-title">my_sudo</h3>
+									<p class="project-description">Recréation simplifiée de la commande sudo.</p>
+									<div class="project-technologies">
+										<span class="project-tech">C</span>
+										<span class="project-tech">Système Unix</span>
+										<span class="project-tech">Permissions</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="project-card">
+								<div class="project-image-container">
+									<div class="project-image epitech-top">
+										<div class="epitech-content">
+											<svg class="epitech-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+											<div class="epitech-title">my_top</div>
+										</div>
+									</div>
+									<div class="project-overlay">
+										<div class="project-links">
+											<a href="https://github.com/grssalex/Epitech-tek1/tree/my_top" target="_blank" rel="noopener noreferrer" class="project-link">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+												GitHub
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="project-info">
+									<div class="project-badge epitech-badge">Epitech Project</div>
+									<h3 class="project-title">my_top</h3>
+									<p class="project-description">Recréation de la commande top (affichage en temps réel des processus système).</p>
+									<div class="project-technologies">
+										<span class="project-tech">C</span>
+										<span class="project-tech">Système Unix</span>
+										<span class="project-tech">Processus</span>
+										<span class="project-tech">Temps réel</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -266,10 +493,7 @@ import HeroSection from '../components/HeroSection.astro';
 								<span>Commencer un projet</span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><path d="M10 14L3 21"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
 							</a>
-							<a href="/cv.pdf" target="_blank" class="cta-button secondary">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-								<span>Voir mon CV</span>
-							</a>
+							<!-- CV button removed - add your CV file to public/cv.pdf if needed -->
 						</div>
 						
 						<div class="contact-form">
@@ -324,6 +548,56 @@ import HeroSection from '../components/HeroSection.astro';
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
 		color: transparent;
+		transition: all 0.3s ease;
+		position: relative;
+		display: inline-block;
+	}
+	
+	.text-gradient.epitech-gradient {
+		background-image: linear-gradient(90deg, #87CEEB, #4682B4);
+	}
+	
+	[data-theme="light"] .text-gradient.epitech-gradient {
+		background-image: linear-gradient(90deg, #1E90FF, #0066CC);
+	}
+	
+	/* Curseur clignotant */
+	.typing-cursor::after {
+		content: '|';
+		color: var(--primary-color);
+		animation: blink 1s infinite;
+		margin-left: 2px;
+	}
+	
+	.typing-cursor.epitech-gradient::after {
+		color: #87CEEB;
+	}
+	
+	[data-theme="light"] .typing-cursor.epitech-gradient::after {
+		color: #1E90FF;
+	}
+	
+	@keyframes blink {
+		0%, 50% {
+			opacity: 1;
+		}
+		51%, 100% {
+			opacity: 0;
+		}
+	}
+	
+	/* Animation pour faire disparaître le texte */
+	.fade-out {
+		animation: fadeOut 0.2s ease-out forwards;
+	}
+	
+	@keyframes fadeOut {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
 	}
 	
 	.section-title {
@@ -454,6 +728,174 @@ import HeroSection from '../components/HeroSection.astro';
 		margin-bottom: 0;
 	}
 	
+	/* Skills Section Styles */
+	.skills-section {
+		padding: 6rem 0;
+		position: relative;
+		width: 100%;
+	}
+	
+	.skills-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+	
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin-top: 3rem;
+	}
+	
+	.skill-card {
+		background: var(--card-bg);
+		border: 1px solid var(--border-color);
+		border-radius: 1rem;
+		padding: 2rem 1.5rem;
+		text-align: center;
+		transition: all 0.3s ease;
+		box-shadow: var(--shadow-sm);
+	}
+	
+	.skill-card:hover {
+		transform: translateY(-5px);
+		box-shadow: var(--shadow-md);
+	}
+	
+	.skill-icon {
+		width: 60px;
+		height: 60px;
+		margin: 0 auto 1rem;
+		background: rgba(93, 63, 211, 0.1);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.3s ease;
+	}
+	
+	.skill-icon svg {
+		width: 30px;
+		height: 30px;
+		color: var(--primary-color);
+		transition: all 0.3s ease;
+	}
+	
+	.skill-card:hover .skill-icon {
+		transform: scale(1.05);
+	}
+	
+	.skill-title {
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--text-color);
+		margin-bottom: 1rem;
+	}
+	
+	.skill-technologies {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		justify-content: center;
+	}
+	
+	.skill-tech {
+		background: var(--background-color);
+		border: 1px solid var(--border-color);
+		padding: 0.4rem 0.8rem;
+		border-radius: 1rem;
+		font-size: 0.85rem;
+		font-weight: 500;
+		color: var(--text-light);
+		transition: all 0.3s ease;
+	}
+	
+	/* Couleurs spécifiques pour chaque catégorie */
+	.skill-card.frontend:hover {
+		border-color: #FF6B6B;
+	}
+	
+	.skill-card.frontend:hover .skill-icon {
+		background: rgba(255, 107, 107, 0.15);
+	}
+	
+	.skill-card.frontend:hover .skill-icon svg {
+		color: #FF6B6B;
+	}
+	
+	.skill-card.frontend:hover .skill-tech {
+		background: rgba(255, 107, 107, 0.1);
+		border-color: #FF6B6B;
+		color: #FF6B6B;
+	}
+	
+	.skill-card.backend:hover {
+		border-color: #50C878;
+	}
+	
+	.skill-card.backend:hover .skill-icon {
+		background: rgba(80, 200, 120, 0.15);
+	}
+	
+	.skill-card.backend:hover .skill-icon svg {
+		color: #50C878;
+	}
+	
+	.skill-card.backend:hover .skill-tech {
+		background: rgba(80, 200, 120, 0.1);
+		border-color: #50C878;
+		color: #50C878;
+	}
+	
+	.skill-card.devops:hover {
+		border-color: #4A90E2;
+	}
+	
+	.skill-card.devops:hover .skill-icon {
+		background: rgba(74, 144, 226, 0.15);
+	}
+	
+	.skill-card.devops:hover .skill-icon svg {
+		color: #4A90E2;
+	}
+	
+	.skill-card.devops:hover .skill-tech {
+		background: rgba(74, 144, 226, 0.1);
+		border-color: #4A90E2;
+		color: #4A90E2;
+	}
+	
+	.skill-card.system:hover {
+		border-color: #F39C12;
+	}
+	
+	.skill-card.system:hover .skill-icon {
+		background: rgba(243, 156, 18, 0.15);
+	}
+	
+	.skill-card.system:hover .skill-icon svg {
+		color: #F39C12;
+	}
+	
+	.skill-card.tools:hover {
+		border-color: #34495E;
+	}
+	
+	.skill-card.tools:hover .skill-icon {
+		background: rgba(52, 73, 94, 0.15);
+	}
+	
+	.skill-card.tools:hover .skill-icon svg {
+		color: #34495E;
+	}
+	
+	.skill-card.tools:hover .skill-tech {
+		background: rgba(52, 73, 94, 0.1);
+		border-color: #34495E;
+		color: #34495E;
+	}
+
 	/* Projects Section Styles */
 	.projects-section {
 		padding: 8rem 0;
@@ -476,8 +918,174 @@ import HeroSection from '../components/HeroSection.astro';
 		line-height: 1.8;
 		color: var(--text-color);
 		text-align: center;
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
 		width: 100%;
+	}
+	
+	.projects-toggle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.75rem;
+		margin-bottom: 2rem;
+		opacity: 0.8;
+	}
+	
+	.toggle-switch {
+		position: relative;
+		display: inline-block;
+		width: 44px;
+		height: 24px;
+	}
+	
+	.toggle-switch input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+	
+	.toggle-slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--border-color);
+		transition: 0.3s;
+		border-radius: 24px;
+	}
+	
+	.toggle-slider:before {
+		position: absolute;
+		content: "";
+		height: 18px;
+		width: 18px;
+		left: 3px;
+		bottom: 3px;
+		background-color: white;
+		transition: 0.3s;
+		border-radius: 50%;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	}
+	
+	input:checked + .toggle-slider {
+		background-color: rgba(93, 63, 211, 0.7);
+	}
+	
+	input:checked + .toggle-slider:before {
+		transform: translateX(20px);
+	}
+	
+	.toggle-label {
+		font-size: 0.95rem;
+		font-weight: 500;
+		color: var(--text-light);
+	}
+	
+	/* Epitech project styles */
+	.epitech-ls,
+	.epitech-printf,
+	.epitech-radar,
+	.epitech-sudo,
+	.epitech-top {
+		background: #000000;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.epitech-ls::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(53, 122, 189, 0.1));
+		z-index: 1;
+	}
+	
+	.epitech-printf::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, rgba(80, 200, 120, 0.1), rgba(60, 179, 113, 0.1));
+		z-index: 1;
+	}
+	
+	.epitech-radar::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(238, 90, 82, 0.1));
+		z-index: 1;
+	}
+	
+	.epitech-sudo::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, rgba(155, 89, 182, 0.1), rgba(142, 68, 173, 0.1));
+		z-index: 1;
+	}
+	
+	.epitech-top::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, rgba(243, 156, 18, 0.1), rgba(230, 126, 34, 0.1));
+		z-index: 1;
+	}
+	
+	.epitech-content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		gap: 1rem;
+		position: relative;
+		z-index: 2;
+		padding: 2rem;
+	}
+	
+	.epitech-icon {
+		color: white;
+		opacity: 0.9;
+		flex-shrink: 0;
+	}
+	
+	.epitech-title {
+		color: white;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 1.2rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	}
+	
+	.epitech-badge {
+		background-color: rgba(135, 206, 235, 0.15);
+		color: #87CEEB;
+		border: 1px solid rgba(135, 206, 235, 0.3);
+	}
+	
+	[data-theme="light"] .epitech-badge {
+		background-color: rgba(30, 144, 255, 0.1);
+		color: #1E90FF;
+		border: 1px solid rgba(30, 144, 255, 0.2);
 	}
 	
 	.projects-grid {
@@ -1126,8 +1734,38 @@ import HeroSection from '../components/HeroSection.astro';
 	}
 	
 	@media (max-width: 768px) {
-		.about-section, .projects-section {
+		.about-section, .projects-section, .skills-section {
 			padding: 5rem 1rem;
+		}
+		
+		.projects-toggle {
+			flex-direction: column;
+			gap: 0.5rem;
+			margin-bottom: 1.5rem;
+		}
+		
+		.toggle-switch {
+			width: 40px;
+			height: 22px;
+		}
+		
+		.toggle-slider {
+			border-radius: 22px;
+		}
+		
+		.toggle-slider:before {
+			height: 16px;
+			width: 16px;
+			left: 3px;
+			bottom: 3px;
+		}
+		
+		input:checked + .toggle-slider:before {
+			transform: translateX(18px);
+		}
+		
+		.toggle-label {
+			font-size: 0.9rem;
 		}
 		
 		.container {
@@ -1187,15 +1825,56 @@ import HeroSection from '../components/HeroSection.astro';
 			grid-template-columns: 1fr;
 			gap: 2rem;
 		}
+		
+		.skills-grid {
+			grid-template-columns: 1fr;
+			gap: 1rem;
+			margin-top: 2rem;
+		}
+		
+		.skill-card {
+			padding: 1.5rem 1rem;
+		}
+		
+		.skill-icon {
+			width: 50px;
+			height: 50px;
+		}
+		
+		.skill-icon svg {
+			width: 24px;
+			height: 24px;
+		}
+		
+		.skill-title {
+			font-size: 1.1rem;
+		}
+		
+		.skill-tech {
+			font-size: 0.8rem;
+			padding: 0.3rem 0.6rem;
+		}
 	}
 	
 	@media (max-width: 576px) {
-		.about-section, .projects-section {
+		.about-section, .projects-section, .skills-section {
 			padding: 4rem 0.75rem;
 		}
 		
 		.container {
 			padding: 0 0.75rem;
+		}
+		
+		.skills-container {
+			padding: 0 0.5rem;
+		}
+		
+		.skills-grid {
+			gap: 0.75rem;
+		}
+		
+		.skill-card {
+			padding: 1.25rem 0.75rem;
 		}
 		
 		.section-title {
@@ -1229,8 +1908,8 @@ import HeroSection from '../components/HeroSection.astro';
 			font-size: 2rem;
 		}
 		
-		.about-section, .projects-section {
-			padding: 3.5rem 0.5rem;
+		.about-section, .projects-section, .skills-section {
+			padding: 3rem 0.5rem;
 		}
 		
 		.container {
@@ -1344,5 +2023,98 @@ import HeroSection from '../components/HeroSection.astro';
         start: 'top 80%',
       }
     });
+    
+    // Toggle for Epitech projects
+    const epitechToggle = document.getElementById('epitech-toggle');
+    const currentProjects = document.getElementById('current-projects');
+    const epitechProjects = document.getElementById('epitech-projects');
+    const projectsGradient = document.getElementById('projects-gradient');
+    
+    // Function to type text letter by letter with cursor
+    function typeWriter(element: HTMLElement, newText: string, isEpitech: boolean, callback?: () => void) {
+      if (!element) return;
+      
+      let currentIndex = 0;
+      element.textContent = '';
+      
+      // Add gradient class
+      if (isEpitech) {
+        element.classList.add('epitech-gradient');
+      } else {
+        element.classList.remove('epitech-gradient');
+      }
+      
+      // Add typing cursor
+      element.classList.add('typing-cursor');
+      
+      function typeNextLetter() {
+        if (currentIndex < newText.length) {
+          element.textContent = newText.substring(0, currentIndex + 1);
+          currentIndex++;
+          setTimeout(typeNextLetter, 80); // 80ms entre chaque lettre
+        } else {
+          // Animation terminée, enlever le curseur après 1 seconde
+          setTimeout(() => {
+            element.classList.remove('typing-cursor');
+            if (callback) callback();
+          }, 1000);
+        }
+      }
+      
+      typeNextLetter();
+    }
+    
+    // Function to animate title change with real typewriter effect
+    function animateTitle(newText: string, isEpitech: boolean, callback?: () => void) {
+      if (!projectsGradient) return;
+      
+      // Step 1: Fade out current text
+      projectsGradient.classList.add('fade-out');
+      
+      setTimeout(() => {
+        // Step 2: Remove fade-out
+        projectsGradient.classList.remove('fade-out');
+        
+        // Step 3: Start typing animation
+        typeWriter(projectsGradient, newText, isEpitech, callback);
+      }, 200);
+    }
+    
+    if (epitechToggle && currentProjects && epitechProjects && projectsGradient) {
+      epitechToggle.addEventListener('change', function() {
+        if ((this as HTMLInputElement).checked) {
+          // Switch to Epitech projects
+          currentProjects.style.display = 'none';
+          epitechProjects.style.display = 'grid';
+          
+          // Animate title change with callback for project cards
+          animateTitle('Projets Epitech', true, () => {
+            // Animate epitech projects after title is done typing
+            gsap.from('#epitech-projects .project-card', {
+              y: 50,
+              opacity: 0,
+              duration: 0.6,
+              stagger: 0.1
+            });
+          });
+          
+        } else {
+          // Switch back to current projects
+          epitechProjects.style.display = 'none';
+          currentProjects.style.display = 'grid';
+          
+          // Animate title change back with callback for project cards
+          animateTitle('Projets', false, () => {
+            // Animate current projects after title is done typing
+            gsap.from('#current-projects .project-card', {
+              y: 50,
+              opacity: 0,
+              duration: 0.6,
+              stagger: 0.1
+            });
+          });
+        }
+      });
+    }
   });
 </script>
